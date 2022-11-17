@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form de Resgistro com validações JS</title>
+    <link rel="stylesheet" href="css/config_styless.css">
+</head>
+<body>
+    <div id="main-container">
+        <h1>CONFIGURAÇÕES</h1>
+        <form action="#" method="#"></form> <!--para puxar dados no back-end-->
+        <form id ="register-form">
+            <h3>ANTECIPAÇÃO DE RESERVAS</h3>
+            <div class="half-box spacing">
+                <input type="number" name="email" id="email"  placeholder="MÍNIMO DE DIAS">
+                <span class="span">ESCOLHA  O MÍNIMO DE DIAS<br />QUE O MORADOR PODE RESERVAR</span> 
+            </div>
+
+            <div class="half-box spacing">
+                <input type="number" name="name" id="name"  placeholder="MÁXIMO DE DIAS">
+                <span class="span">ESCOLHA  O MÁXIMO DE DIAS<br />QUE O MORADOR PODE RESERVAR</span> 
+            </div>
+    
+            <div class="half-box">
+                <input type="number" name="lastname" id="lastname" placeholder="QUANTIDADE DE RESERVAS">
+                <span class="span">DIGITE A QUANTIDADE DE RESERVAS QUE UM ÚNICO MORADOR PODE REALIZAR</span> 
+            </div>
+            <div class="full-box">
+                <input type="number" apartment="apartment" id="apartment"  placeholder="CANCELAMENTO DE RESERVAS">
+                <span class="span">DIGITE A QUANTIDADE DE DIAS QUE O MORADOR PODE ANTECIPAR O CANCELAMENTO DA RESERVA</span> 
+                </div>
+                <div class="full-box">
+                    <input type="submit" id="btn-submit" value="Registrar">
+                </div>
+
+        </form>
+
+    </div>
+    <p class="error-validation template"></p>
+    <script src="js/script.js"></script>
+</body>
+</html>
